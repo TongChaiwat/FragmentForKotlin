@@ -25,6 +25,15 @@ class FM1 : Fragment() {
         }
     }
 
+    fun newInstanceNotSigleton(name: String, age: Int): FM1 {
+        val fragment = FM1()
+        val args = Bundle()
+        args.putString("name", name)
+        args.putInt("age", age)
+        fragment.arguments = args
+        return fragment
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         init()

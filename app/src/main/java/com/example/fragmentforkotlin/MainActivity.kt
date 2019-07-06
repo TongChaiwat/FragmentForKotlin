@@ -15,5 +15,7 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
+        FM1().newInstanceNotSigleton("Boy", 30)
+
     }
 }
