@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.content_container, FM1.newInstance("Tong3", 33), FM1.javaClass.simpleName)
+                .add(R.id.content_container, FM1.newInstance("Tong", 25), FM1.javaClass.simpleName)
                 .commit()
         }
 
